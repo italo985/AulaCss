@@ -1,0 +1,15 @@
+body{
+    background-color:rgb(243, 234, 253);
+}
+
+header{
+    background-color: white;
+    height: 100px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.estrutura{
+    margin-top: 20vh;
+    text-align: center;
+}

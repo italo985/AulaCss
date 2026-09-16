@@ -1,0 +1,29 @@
+.cadastro{
+    width: 30%;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+    padding: auto;
+    margin: auto  auto;
+    background-color:rgb(170, 163, 240);
+    border-radius: 67px;
+
+}
+
+body{
+    height: 98vh;
+    align-content: center;
+    font-family:   sans-serif;
+    background-color:rgb(243, 234, 253)
+}
+
+form{
+ border-radius: 10%;
+ padding: 20px;
+ margin: 60px auto;
+}
+
+button{
+    background-color: green;
+}
+
