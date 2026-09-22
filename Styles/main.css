@@ -23,21 +23,21 @@ header{
     position: fixed;
     top: 150px;
     left: 10px;
-    width: 80px;              /* largura "fechada" */
+    width: 80px;              
     height: calc(100vh - 150px);
     background-color:azure;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 20px;
-    overflow: hidden;         /* esconde o texto que transborda */
+    overflow: hidden;         
     transition: width 0.3s ease;
     border-radius: 30px;
     box-sizing: border-box;
 }
 
 .menu:hover {
-    width: 200px;              /* largura "aberta" */
+    width: 200px;              /* largura da coluna quando está aberta */
 }
 
 .menu-item {
@@ -46,14 +46,7 @@ header{
     width: 100%;
     padding: 12px 20px;
     box-sizing: border-box;
-    white-space: nowrap;       /* não deixa o texto quebrar linha */
     cursor: pointer;
-}
-
-.menu-item i {
-    font-size: 20px;
-    width: 30px;                /* espaço fixo pro ícone, texto sempre alinhado */
-    text-align: center;
 }
 
 .menu-item span {
@@ -62,6 +55,6 @@ header{
     transition: opacity 0.2s ease;
 }
 
-.menu:hover .menu-item span {
-    opacity: 1;
+.menu:hover .menu-item span {  /*faz as palavras aparecerem*/
+    opacity: 1;                         
 }
