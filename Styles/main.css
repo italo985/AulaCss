@@ -1,15 +1,67 @@
 body{
     background-color:rgb(243, 234, 253);
+    display: flexbox;
 }
 
 header{
-    background-color: white;
+    background-color: azure;
     height: 100px;
     text-align: center;
     border-radius: 20px;
 }
 
-.estrutura{
-    margin-top: 20vh;
+.estrutura{ 
+
+    text-align: right;
+    width: 75%;
+    margin-left: 80px;
+    flex:1;
+    
+}
+
+.menu {
+    position: fixed;
+    top: 150px;
+    left: 10px;
+    width: 80px;              /* largura "fechada" */
+    height: calc(100vh - 150px);
+    background-color:azure;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    overflow: hidden;         /* esconde o texto que transborda */
+    transition: width 0.3s ease;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.menu:hover {
+    width: 200px;              /* largura "aberta" */
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    white-space: nowrap;       /* não deixa o texto quebrar linha */
+    cursor: pointer;
+}
+
+.menu-item i {
+    font-size: 20px;
+    width: 30px;                /* espaço fixo pro ícone, texto sempre alinhado */
     text-align: center;
+}
+
+.menu-item span {
+    margin-left: 15px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.menu:hover .menu-item span {
+    opacity: 1;
 }
